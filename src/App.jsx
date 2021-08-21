@@ -57,7 +57,7 @@ export default function App() {
   }
 
   return (
-    <div className="py-16 px-8">
+    <div>
       <div className="mockup-window bg-base-300">
         <div className="flex justify-left px-8 py-6 bg-base-200">
           <div className="flex-1">
