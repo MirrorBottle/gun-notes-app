@@ -95,6 +95,9 @@ export default function App() {
                       <h5>{note.name}</h5>
                       <h2 className="card-title lg:text-4xl break-all">{note.note}</h2> 
                       <p><em>- {moment(note.createdAt).fromNow()}</em></p>
+                      <div class="text-right">
+                        <button onClick={() => {navigator.clipboard.writeText(note.note)}} class="btn btn-outline btn-sm">Copy</button> 
+                      </div>
                     </div>
                   </div>
                 ))
