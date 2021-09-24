@@ -26,6 +26,7 @@ export default function App() {
 
   useEffect(() => {
     const notes = gun.get('notes');
+    console.log(notes);
     notes.map().on(({ name, note, createdAt }) => {
       dispatch({ name, note, createdAt })
     })
@@ -39,6 +40,7 @@ export default function App() {
     const notes = gun.get('notes');
     const { note, name } = formState;
     notes.set({ note, name, createdAt: Date.now() })
+    console.log(notes);
     setForm({ name: '', note: '' });
   }
 
